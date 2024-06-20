@@ -1,0 +1,213 @@
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.contact-info .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.contact-details .detail-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contact-details strong {
+    min-width: 120px;
+}
+
+
+.contact-info h2,
+.deals h3,
+.next-action h3,
+.file-uploads h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background: #ffffff;
+    padding: 20px;
+
+}
+
+.contact-details div {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f2e6e6;
+    padding: 10px;
+}
+
+.deals-next-action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+}
+
+.deal,
+.deal-date {
+    border-bottom: 1px solid #ddd;
+}
+
+.deals,
+.next-action {
+    width: 48%;
+    background: #ffffff;
+    padding: 15px;
+
+}
+
+.deals .deal,
+.next-action .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.amount {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ff5722;
+    border: 1px solid salmon;
+    border-radius: 100px;
+    padding: 3px 6px;
+    background-color: rgb(255, 192, 192);
+
+}
+
+
+.deals-next-action {
+    display: flex;
+    gap: 20px;
+}
+
+.deals,
+.next-action {
+    flex: 1;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.today {
+    background-color: #e0f7fa;
+    /* Adjust color as needed */
+}
+
+.future {
+    background-color: #fce4ec;
+    /* Adjust color as needed */
+}
+
+.file-uploads {
+    margin-top: 20px;
+}
+
+.file-uploads .file-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.upload-button {
+    background-color: #342db9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-all-button {
+    background-color: #fdfeff;
+    color: #342db9;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-uploads table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.file-uploads table th,
+.file-uploads table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.file-uploads table th {
+    background-color: #f4f4f4;
+}
+
+.more-button {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.file-uploads table th .fa-arrow-up {
+    margin-left: 5px;
+}
+
+.file-uploads table td .fa-file-pdf {
+    margin-right: 10px;
+    color: #ff5722;
+}
+
+.file-uploads table td .fa-file-image {
+    margin-right: 10px;
+    color: #c714e3;
+}
+
+.file-uploads table td .fa-file-word {
+    margin-right: 10px;
+    color: #2277ff;
+}
+
+.file-uploads table td .fa-file-video {
+    margin-right: 10px;
+    color: #223cff;
+}
+
+.file-uploads table td .fa-file-waveform {
+    margin-right: 10px;
+    color: #ff229f;
+}

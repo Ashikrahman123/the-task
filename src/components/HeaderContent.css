@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.header-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-title h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.highlight {
+    color: red;
+    font-weight: 700;
+    /* Bold for emphasis */
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    /* Ensure buttons use Roboto */
+}
+
+.send-email {
+    background-color: blue;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.edit,
+.delete {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+.dropdown {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.label-value-pairs {
+    display: flex;
+
+    gap: 40px;
+    /* Add space between the pairs */
+}
+
+.pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: 700;
+    margin-bottom: 5px;
+    /* Add space between label and value */
+    font-size: 1em;
+    /* Adjust font size for label */
+}
+
+.value {
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.9em;
+    /* Adjust font size for value */
+}
