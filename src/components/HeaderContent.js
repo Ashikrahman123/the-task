@@ -7,10 +7,12 @@ function HeaderContent() {
       <div className="header-title">
         <h3>Dante Lucca - <span className="highlight">(King)</span></h3>
         <div className="actions">
-          <button className="send-email">Send Email</button>
-          <button className="edit">Edit</button>
-          <button className="delete">Delete</button>
-          <select className="dropdown"></select>
+          <button className="btn-blue">Send Email</button>
+          <button className="btn-grey">Edit</button>
+          <button className="btn-grey">Delete</button>
+          <select className="dropdown">
+            <option>  </option>
+          </select>
         </div>
       </div>
       <div className="label-value-pairs">

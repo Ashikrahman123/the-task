@@ -1,3 +1,4 @@
+/* src/App.css */
 .App {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,13 @@
 .content {
   display: flex;
   flex: 1;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 /* src/components/Header.css */
@@ -16,25 +24,29 @@
   color: white;
 }
 
+
+
 /* src/components/MainContent.css */
 .app-container {
   display: flex;
+  flex: 1;
 }
 
 .main-content-container {
   flex-grow: 1;
   margin: 10px;
-  /* Add margin to ensure it's separated from the sidebar */
   padding: 10px;
-  /* Add padding for inner spacing */
   background-color: white;
-  /* Ensure main content has a white background */
   border-radius: 8px;
-  /* Add rounded corners */
   border: 1px solid #e0e0e0;
-  /* Add a light border */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Add subtle shadow for depth */
+}
+
+@media (max-width: 768px) {
+  .main-content-container {
+    margin: 5px;
+    padding: 5px;
+  }
 }
 
 /* src/components/Footer.css */
@@ -42,4 +54,11 @@
   background-color: #282c34;
   padding: 10px;
   color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 5px;
+  }
 }

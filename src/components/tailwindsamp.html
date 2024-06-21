@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="logo.png" alt="Logo" class="h-10">
+            <input type="text" placeholder="Search product" class="border rounded-lg p-2 w-64">
+        </div>
+        <div class="flex items-center space-x-4">
+            <img src="star.png" alt="Star" class="h-6">
+            <img src="add.png" alt="Add" class="h-6">
+            <img src="question.png" alt="Help" class="h-6">
+            <img src="settings.png" alt="Settings" class="h-6">
+            <img src="group.png" alt="Group" class="h-6">
+            <img src="profile.png" alt="Profile" class="h-6">
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white p-6">
+            <nav class="space-y-4">
+                <a href="#" class="block text-gray-700 font-semibold">Notes</a>
+                <a href="#" class="block text-gray-700 font-semibold">Deals</a>
+                <a href="#" class="block text-gray-700 font-semibold">Email</a>
+                <a href="#" class="block text-gray-700 font-semibold">Products</a>
+                <a href="#" class="block text-gray-700 font-semibold">Campaigns</a>
+                <a href="#" class="block text-gray-700 font-semibold">Cases</a>
+                <a href="#" class="block text-gray-700 font-semibold">Quotes</a>
+                <a href="#" class="block text-gray-700 font-semibold">Sales Order</a>
+                <a href="#" class="block text-gray-700 font-semibold">Purchase Orders</a>
+                <a href="#" class="block text-gray-700 font-semibold">Emails</a>
+                <a href="#" class="block text-gray-700 font-semibold">Invoice</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-2xl font-bold">Dante Lucca - <span class="text-red-500">(King)</span></h1>
+                    <div class="flex space-x-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">Send Email</button>
+                        <button class="bg-gray-200 px-4 py-2 rounded">Edit</button>
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">Delete</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h2 class="font-semibold mb-2">Contact Information</h2>
+                        <ul class="space-y-1">
+                            <li><strong>Account Name:</strong> Dante Lucca</li>
+                            <li><strong>Phone:</strong> 521236521</li>
+                            <li><strong>Email:</strong> DanteLucca13@mail.com</li>
+                            <li><strong>Mobile:</strong> 521236521</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold mb-2">Deals</h2>
+                        <ul class="space-y-1">
+                            <li><strong>King:</strong> $25852711</li>
+                            <li><strong>Identity Decision:</strong> 19 May, 1996</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Uploads -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+                <h2 class="font-semibold mb-2">File Uploads</h2>
+                <div class="flex justify-between items-center mb-4">
+                    <button class="bg-gray-200 px-4 py-2 rounded">Download all</button>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Upload</button>
+                </div>
+                <ul class="space-y-1">
+                    <li class="flex justify-between items-center">
+                        <span>Tech requirements.pdf</span>
+                        <span>200 KB</span>
+                        <span>Jan 4, 2024</span>
+                        <span>Olivia Rhye</span>
+                        <button class="bg-gray-200 px-4 py-2 rounded">More</button>
+                    </li>
+                    <!-- Add more file upload items as needed -->
+                </ul>
+            </div>
+
+            <!-- Deals -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+                <h2 class="font-semibold mb-2">Deals</h2>
+                <div class="flex justify-between items-center mb-4">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Add New</button>
+                    <button class="bg-gray-200 px-4 py-2 rounded">New Deals</button>
+                </div>
+                <ul class="space-y-1">
+                    <li class="flex justify-between items-center">
+                        <span>King</span>
+                        <span>Jan 6, 2024</span>
+                        <span>Active</span>
+                        <span>Identify Decision Maker</span>
+                    </li>
+                    <!-- Add more deal items as needed -->
+                </ul>
+            </div>
+
+            <!-- Open Activities -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+                <h2 class="font-semibold mb-2">Open Activities</h2>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Add new</button>
+                <ul class="space-y-1">
+                    <li class="flex justify-between items-center">
+                        <span>Thariq</span>
+                        <span>Jan 6, 2024</span>
+                        <span>Active</span>
+                        <span>Register for Upcoming Seminar</span>
+                    </li>
+                    <!-- Add more activity items as needed -->
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

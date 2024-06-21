@@ -1,4 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* Import the "Nunito Sans" font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+/* Define a custom class for bold "Nunito Sans" */
+.nunitosans-bold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    /* Set the font weight to bold */
+}
+
+/* Optionally, define more classes for different font weights if needed */
+.nunitosans-regular {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+.nunitosans-semibold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.nunitosans-extrabold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
 
 .header-content {
     background-color: #ffffff;
@@ -7,10 +31,9 @@
     margin-bottom: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    margin: 10px;
 }
 
 .header-title {
@@ -22,13 +45,12 @@
 
 .header-title h3 {
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .highlight {
     color: red;
     font-weight: 700;
-    /* Bold for emphasis */
 }
 
 .actions {
@@ -42,36 +64,81 @@ button {
     border: 1px solid #ccc;
     border-radius: 3px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    /* Ensure buttons use Roboto */
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
 }
 
-.send-email {
-    background-color: blue;
+.btn-blue {
+    background-color: #5156d6;
+    /* Tailwind's blue-500 */
     color: white;
+    /* Tailwind's text-white */
+    padding: 0.5rem 1rem;
+    /* Tailwind's px-4 py-2 */
+    border-radius: 0.375rem;
+    /* Tailwind's rounded */
     border: none;
-    font-weight: 500;
+    /* Remove any default button border */
+    cursor: pointer;
+    /* Change the cursor to pointer on hover */
+    font-size: 1rem;
+    /* Ensure the text size is readable */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.edit,
-.delete {
+/* Optionally, add some hover and focus effects */
+.btn-blue:hover {
+    background-color: #2563eb;
+    /* Darker blue for hover effect */
+}
+
+.btn-blue:focus {
+    outline: 2px solid #93c5fd;
+    /* Light blue outline on focus */
+    outline-offset: 2px;
+}
+
+
+
+.btn-grey {
     background-color: white;
     color: black;
     font-weight: 500;
+    padding: 0.5rem 1rem;
+    /* Tailwind's px-4 py-2 */
+    border-radius: 0.375rem;
+    /* Tailwind's rounded */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Remove any default button border */
+    cursor: pointer;
+    /* Change the cursor to pointer on hover */
+    font-size: 1rem;
+    /* Ensure the text size is readable */
+}
+
+.btn-grey:hover {
+    background-color: #8793ad;
+    /* Darker blue for hover effect */
+}
+
+.btn-grey:focus {
+    outline: 2px solid #93c5fd;
+    /* Light blue outline on focus */
+    outline-offset: 2px;
 }
 
 .dropdown {
     margin-left: 10px;
-    padding: 5px;
+    padding: 7px 20px;
     border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 }
 
 .label-value-pairs {
     display: flex;
-
     gap: 40px;
-    /* Add space between the pairs */
 }
 
 .pair {
@@ -82,14 +149,22 @@ button {
 .label {
     font-weight: 700;
     margin-bottom: 5px;
-    /* Add space between label and value */
     font-size: 1em;
-    /* Adjust font size for label */
 }
 
 .value {
     text-align: left;
     font-weight: 400;
     font-size: 0.9em;
-    /* Adjust font size for value */
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .label-value-pairs {
+        flex-direction: column;
+    }
 }

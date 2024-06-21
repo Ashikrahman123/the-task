@@ -28,49 +28,21 @@ h2,
 h3 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .main-content {
-    background-color: #ffffff;
-    padding: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
     font-family: 'Nunito Sans', sans-serif;
-    /* Added width 100% */
     width: 100%;
-    /* Added box-sizing border-box */
     box-sizing: border-box;
 }
 
 .section {
     margin-bottom: 20px;
-    /* Added width 100% */
     width: 100%;
-    /* Added box-sizing border-box */
     box-sizing: border-box;
-}
-
-.contact-info .contact-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 20px;
-}
-
-.contact-details .detail-item {
-    display: flex;
-    gap: 10px;
-}
-
-
-.contact-details strong {
-    min-width: 120px;
-}
-
-.contact-info h2,
-.deals h3,
-.next-action h3,
-.file-uploads h3 {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .box {
@@ -82,18 +54,19 @@ h3 {
     margin-bottom: 20px;
 }
 
-.contact-details {
+.contact-info .contact-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    background: #ffffff;
-    padding: 0px;
+    gap: 10px 20px;
 }
 
-.contact-details div {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #f2e6e6;
-    padding: 10px;
+.contact-details .detail-item {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-details strong {
+    min-width: 120px;
 }
 
 .contact-info h2,
@@ -282,14 +255,30 @@ h3 {
     padding: 5px 10px;
     border-radius: 4px;
     color: white;
-
 }
 
 .deals1 .status.active {
     background: #28a745;
 }
 
+.open-activities .activities-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
 
+.open-activities .activities-tabs .tab {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.open-activities .activities-tabs .tab.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
 
 .open-activities table {
     width: 100%;
@@ -306,33 +295,10 @@ h3 {
     background: #f9f9f9;
 }
 
-.open-activities .activities-tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-
-
-}
-
-.open-activities .activities-tabs .tab {
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background: #f9f9f9;
-    cursor: pointer;
-}
-
-.open-activities .activities-tabs .tab.active {
-    background-color: #342db9;
-    color: white;
-    border-color: #007bff;
-    border-radius: 20px;
-}
-
 .open-activities .status.overdue {
     background: #dc3545;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 4px;
     color: white;
 }
 

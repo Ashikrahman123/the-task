@@ -1,3 +1,29 @@
+/* Import the "Nunito Sans" font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+/* Define a custom class for bold "Nunito Sans" */
+.nunitosans-bold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    /* Set the font weight to bold */
+}
+
+/* Optionally, define more classes for different font weights if needed */
+.nunitosans-regular {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+.nunitosans-semibold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.nunitosans-extrabold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+
 .header {
     background-color: #404EED !important;
     color: white;
@@ -10,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     height: 60px;
 }
 
@@ -20,10 +46,11 @@
 }
 
 .center-section {
-    flex: 1;
+    flex: 0;
     display: flex;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 50px;
+    position: relative;
 }
 
 .right-section {
@@ -32,10 +59,9 @@
 }
 
 .logo {
-    font-family: cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
     font-size: 30px;
-    font-weight: bold;
-    margin-right: 20px;
 }
 
 .search-input {
@@ -46,14 +72,29 @@
     border: none;
     outline: none;
     font-size: 14px;
+    color: black;
+}
+
+.pop-up .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid cadetblue;
 }
 
 .search-input::placeholder {
     color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+
 }
 
 .search-container {
     position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .search-icon {
@@ -62,7 +103,6 @@
     top: 50%;
     transform: translateY(-50%);
     color: #555;
-    /* Adjust color as needed */
 }
 
 .icon {
@@ -75,9 +115,8 @@
     width: 15px;
     height: 15px;
     margin-left: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 10px 15px;
     font-size: 10px;
 }
 
@@ -96,8 +135,11 @@
 .bottom-header {
     display: flex;
     justify-content: flex-start;
-    padding: 0 20px;
+    flex-wrap: wrap;
+    padding: 0;
     background-color: #404EED;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
 }
 
 .menu-item {
@@ -105,9 +147,112 @@
     text-decoration: none;
     padding: 10px 15px;
     font-size: 10px;
+    position: relative;
+    cursor: pointer;
 }
 
-.menu-item:hover {
+.menu-item:visited,
+.menu-item:hover,
+.menu-item:active {
+    color: white;
     background-color: #595CCF;
     border-radius: 5px;
+}
+
+.dots-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.pop-up {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    white-space: nowrap;
+    line-height: 1.5;
+    /* Increase line height */
+    font-size: 14px;
+    /* Increase font size */
+}
+
+.pop-up p {
+    margin: 0;
+    /* Remove default margin from paragraphs */
+    padding: 5px 0;
+    /* Add vertical padding for spacing */
+}
+
+/* Apply styles to ensure consistent padding and spacing */
+.pop-up .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid cadetblue;
+    margin-bottom: 10px;
+    /* Add space below the search container */
+}
+
+.search-input {
+    width: 250px;
+    height: 30px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: black;
+}
+
+.search-input::placeholder {
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.menu-item:hover .pop-up {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .top-header,
+    .bottom-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center-section {
+        justify-content: flex-end;
+    }
+
+    .menu-item {
+        padding: 10px 0;
+    }
 }
